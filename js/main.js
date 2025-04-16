@@ -446,7 +446,7 @@ function updateCountdown() {
     const minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
-    countdownDisplay.textContent = `${minutes}:${seconds}`;
+    countdownDisplay.textContent = `${minutes}h:${seconds}s`;
     timeLeft--;
 
     if (timeLeft < 0) {
@@ -471,3 +471,9 @@ bidButton.addEventListener("click", () => {
 
 currentPriceDisplay.textContent = currentPrice.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }); // Hiển thị giá khởi điểm với VND
 
+function chuyenTrang(selectElement) {
+    const url = selectElement.value;
+    if (url !== "#") {
+      window.location.href = url;
+    }
+  }

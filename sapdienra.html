@@ -88,14 +88,15 @@
                                             <li><a href="blog.html">blog</a></li>
                                             <li><a href="#">pages</a>
                                                 <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="auction.html">products auction</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>                                           
+                                                    <li><a href="contact.html">contact</a></li>
+                                                    <!-- <li><a href="blog-details.html">Blog Details</a></li>
                                                     <li><a href="cart.html">Cart page</a></li>
                                                     <li><a href="checkout.html">checkout</a></li>
-                                                    <li><a href="contact.html">contact</a></li>
                                                     <li><a href="product-grid.html">product grid</a></li>
                                                     <li><a href="product-details.html">product details</a></li>
-                                                    <li><a href="wishlist.html">wishlist</a></li>
+                                                    <li><a href="wishlist.html">wishlist</a></li> -->
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">contact</a></li>
@@ -207,15 +208,13 @@
                         <div class="htc__product__rightidebar">
                             <div class="htc__grid__top">
                                 <div class="htc__select__option">
-                                    <select class="ht__select">
-                                        <option>Sắp xếp theo...</option>
-                                        <option>Phổ biến</option>
-                                        <option>Đánh giá</option>
-                                        <option>Mới nhất</option>
+                                    <select class="ht__select" onchange="chuyenTrang(this)">
+                                        <option value="#">Thời gian...</option>
+                                        <option value="sapdienra.html">Sắp diễn ra</option>
+                                        <option value="dangdienra.html">Đang diễn ra</option>
+                                        <option value="daketthuc.html">Đã kết thúc</option>
                                     </select>
-                                    
-                                </div>
-                            
+                                </div>                           
                             </div>
                             <!-- Start Product View -->
                             <div class="row">
@@ -483,9 +482,11 @@
                             <div class="htc__category">
                                 <h4 class="title__line--4">Danh Mục</h4>
                                 <ul class="ht__cat__list">
-                                    <li><a href="sapdienra.html">Sắp diễn ra</a></li>
-                                    <li><a href="dangdienra.html">Đang diễn ra</a></li>
-                                    <li><a href="daketthuc.html">Đã kết thúc</a></li>
+                                    <li><a href="#">Tranh</a></li>
+                                    <li><a href="#">Đồ cổ</a></li>
+                                    <li><a href="#">Xe Cộ</a></li>
+                                    <li><a href="#">NFT</a></li>
+                                    <li><a href="#">BĐS Cao Cấp</a></li>
                                 </ul>
                             </div>
                             <!-- End Category Area -->             
