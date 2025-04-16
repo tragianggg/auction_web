@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Asbab - eCommerce HTML5 Templatee</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel min css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <header id="htc__header" class="htc__header__area header--one">
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="menumenu__container clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
+                                <div class="logo">
+                                     <a href="index.html"><img src="images/logo/logo.png" alt="logo images"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
+                                <nav class="main__menu__nav hidden-xs hidden-sm">
+                                    <ul class="main__menu">
+                                        <li class="drop"><a href="index.html">Trang Chủ</a></li>
+                                        <li class="drop"><a href="#">Dịch Vụ</a>
+                                            <ul class="dropdown">
+                                                <li><a href="">Đấu Giá</a></li>
+                                                <li><a href="">Đăng Đấu Giá</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop"><a href="product-grid.html">vật phẩm</a>
+                                        </li>
+                                        <li class="drop"><a href="auction.html">phiên đấu giá</a>
+                                            
+                                                    <ul class="dropdown">
+                                                        <li><a href="sapdienra.html">phiên sắp diễn ra</a></li>
+                                                        <li><a href="dangdienra.html">phiên đang diễn ra</a></li>
+                                                        <li><a href="daketthuc.html">phiên đã kết thúc</a></li>
+                                                    </ul>
+                                              
+                                        </li>
+                                        <li class="drop"><a href="blog.html">blog</a>
+                                            <ul class="dropdown">
+                                                <li><a href="blog.html">Blog Grid</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Support Center</a></li>
+                                    </ul>
+                                </nav>
+
+                                <div class="mobile-menu clearfix visible-xs visible-sm">
+                                    <nav id="mobile_dropdown">
+                                        <ul>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="blog.html">blog</a></li>
+                                            <li><a href="#">pages</a>
+                                                <ul>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="cart.html">Cart page</a></li>
+                                                    <li><a href="checkout.html">checkout</a></li>
+                                                    <li><a href="contact.html">contact</a></li>
+                                                    <li><a href="product-grid.html">product grid</a></li>
+                                                    <li><a href="product-details.html">product details</a></li>
+                                                    <li><a href="wishlist.html">wishlist</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>  
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
+                                <div class="header__right">
+                                    <div class="header__search search search__open">
+                                        <a href="#"><i class="icon-magnifier icons"></i></a>
+                                    </div>
+                                    <div class="header__account">
+                                        <a href="#"><i class="icon-user icons"></i></a>
+                                    </div>
+                                    <div class="htc__shopping__cart">
+                                        <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
+                                        <a href="#"><span class="htc__qua">2</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-area"></div>
+                </div>
+            </div>
+            <!-- End Mainmenu Area -->
+        </header>
+        <!-- End Header Area -->
+
+        <div class="body__overlay"></div>
+        <!-- Start Offset Wrapper -->
+        <div class="offset__wrapper">
+            <!-- Start Search Popap -->
+            <div class="search__area">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-12" >
+                            <div class="search__inner">
+                                <form action="#" method="get">
+                                    <input placeholder="Search here... " type="text">
+                                    <button type="submit"></button>
+                                </form>
+                                <div class="search__close__btn">
+                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Popap -->
+            <!-- Start Cart Panel -->
+            <div class="shopping__cart">
+                <div class="shopping__cart__inner">
+                    <div class="offsetmenu__close__btn">
+                        <a href="#"><i class="zmdi zmdi-close"></i></a>
+                    </div>
+                    <div class="shp__cart__wrap">
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product-2/sm-smg/1.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$105.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                        <div class="shp__single__product">
+                            <div class="shp__pro__thumb">
+                                <a href="#">
+                                    <img src="images/product-2/sm-smg/2.jpg" alt="product images">
+                                </a>
+                            </div>
+                            <div class="shp__pro__details">
+                                <h2><a href="product-details.html">Brone Candle</a></h2>
+                                <span class="quantity">QTY: 1</span>
+                                <span class="shp__price">$25.00</span>
+                            </div>
+                            <div class="remove__btn">
+                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="shoping__total">
+                        <li class="subtotal">Subtotal:</li>
+                        <li class="total__price">$130.00</li>
+                    </ul>
+                    <ul class="shopping__btn">
+                        <li><a href="cart.html">View Cart</a></li>
+                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Cart Panel -->
+        </div>
+        <!-- End Offset Wrapper -->
+        <!-- Start Slider Area -->
+        <div class="slider__container slider--one bg__cat--3">
+            <div class="slide__container slider__activation__wrap owl-carousel" id="slide__container">
+                <!-- Start Single Slide -->
+                <div class="single__slide animation__style01 slider__fixed--height">
+                    <div class="container">
+                        <div class="row align-items__center">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                <div class="slide">
+                                    <div class="slider__inner">                       
+                                        <h1>g-auction</h1>
+                                        <h2>Đầu Tư - Sưu Tầm - Kết Nối</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                <div class="slide__thumb">
+                                    <img src="images/slider/fornt-img/1.jpg" alt="slider">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+                <!-- Start Single Slide -->
+                <div class="single__slide animation__style01 slider__fixed--height">
+                    <div class="container">
+                        <div class="row align-items__center">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                <div class="slide">
+                                    <div class="slider__inner">
+                                        <h1>g-auction</h1>
+                                        <h2>Đầu Tư - Sưu Tầm - Kết Nối</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                <div class="slide__thumb">
+                                    <img src="images/slider/fornt-img/2.jpg" alt="slider images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+            </div>
+        </div>
+        <!-- Start Slider Area -->
+        <!-- Start Category Area -->
+        <section class="htc__category__area ptb--100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section__title--2 text-center">
+                            <h3 class="title__line" style="font-size: 40px;color: brown;">Vật Phẩm Sắp Đấu Giá</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="htc__product__container">
+                    <div class="row">
+                        <div class="product__list clearfix mt--30">
+                            <!-- Start Single Category -->
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/3.png" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">En plein air - Mai Trung Thứ
+                                        </a></h4><br>
+                                        <h3 style="border:solid 1px gray; border-radius: 5px; ">Thời gian : 20/04/2025</h3>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">Giá khởi điểm : 20.000 USD</li>
+                                        </ul>
+                                        <h4>Bước giá : 500 USD</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Category -->
+                            <!-- Start Single Category -->
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/2.png" alt="product images" style="background-size: cover;">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">Chân đèn Khải Định triều Nguyễn
+                                        </a></h4><br>
+                                        <h3 style="border:solid 1px gray; border-radius: 5px; ">Thời gian : 20/04/2025</h3>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize" >Giá khởi điểm : 50.000 USD</li>
+                                        </ul>
+                                        <h4>Bước giá : 500 USD</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Category -->
+                            <!-- Start Single Category -->
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/1.png" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html"> Ferrari 250GT SWB</a></h4><br>
+                                        <h3>Thời gian : 30/04/2025</h3>                                        
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">Giá khởi điểm : 18.000.000 USD</li>
+                                        </ul>
+                                        <h4>Bước giá : 500.000 USD</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Category -->
+                            <!-- Start Single Category -->
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/4.png" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">Rubiks Lure </a></h4><br>
+                                        <h3 style="border:solid 1px gray; border-radius: 5px; ">Thời gian : 05/05/2025</h3>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">Giá khởi điểm : 200.000 USD</li>
+                                        </ul>
+                                        <h4>Bước giá : 1.000 USD </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Category -->
+
+                            <!-- thêm các sản phẩm ở dưới -->
+
+                            <!-- Start Single Category
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/5.jpg" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">donec ac tempus nrb</a></h4>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">$30.3</li>
+                                            <li>$25.9</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/6.jpg" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">Product Title Here </a></h4>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">$30.3</li>
+                                            <li>$25.9</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/7.jpg" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">Product Title Here </a></h4>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">$30.3</li>
+                                            <li>$25.9</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="category">
+                                    <div class="ht__cat__thumb">
+                                        <a href="product-details.html">
+                                            <img src="images/product/8.jpg" alt="product images">
+                                        </a>
+                                    </div>
+                                    <div class="fr__hover__info">
+                                        <ul class="product__action">
+                                            <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+
+                                            <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fr__product__inner">
+                                        <h4><a href="product-details.html">Product Title Here </a></h4>
+                                        <ul class="fr__pro__prize">
+                                            <li class="old__prize">$30.3</li>
+                                            <li>$25.9</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Category Area -->
+        <!-- Start Prize Good Area -->
+        <section class="htc__good__sale bg__cat--3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="fr__prize__inner">
+                            <div class="auction-container">
+                                <h2>En plein air - Mai Trung Thứ</h2>
+                                <p>Auction Time: <span id="countdown"></span></p>                                          
+                                <button style="padding: 5px 10px; border-radius: 10px;"><a href="product-details.html">Detail...</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                        <div class="prize__inner">
+                            <div class="prize__thumb">
+                                <img src="images/product/3.png" alt="banner images" style="border-radius: 20px;">
+                            </div>
+                            <!--<div class="banner__info">
+                                <div class="pointer__tooltip pointer--3 align-left">
+                                    <div class="tooltip__box">
+                                        <h4>Tooltip Left</h4>
+                                        <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                    </div>
+                                </div>
+                                <div class="pointer__tooltip pointer--4 align-top">
+                                    <div class="tooltip__box">
+                                        <h4>Tooltip Top</h4>
+                                        <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                    </div>
+                                </div>
+                                <div class="pointer__tooltip pointer--5 align-bottom">
+                                    <div class="tooltip__box">
+                                        <h4>Tooltip Bottom</h4>
+                                        <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                    </div>
+                                </div>
+                                <div class="pointer__tooltip pointer--6 align-top">
+                                    <div class="tooltip__box">
+                                        <h4>Tooltip Bottom</h4>
+                                        <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                    </div>
+                                </div>
+                                <div class="pointer__tooltip pointer--7 align-top">
+                                    <div class="tooltip__box">
+                                        <h4>Tooltip Bottom</h4>
+                                        <p>Lorem ipsum pisaci volupt atem accusa saes ntisdumtiu loperm asaerks.</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Prize Good Area -->
+        <!-- Start Brand Area -->
+        <div class="htc__brand__area bg__cat--4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ht__brand__inner">
+                            <ul class="brand__list owl-carousel clearfix">
+                                <li><a href="#"><img src="images/brand/1.jpg" alt="brand images"></a></li>
+                                <li><a href="#"><img src="images/brand/2.jpg" alt="brand images"></a></li>
+                                <li><a href="#"><img src="images/brand/3.jpg" alt="brand images"></a></li>
+                                <li><a href="#"><img src="images/brand/4.jpg" alt="brand images"></a></li>
+                                <li><a href="#"><img src="images/brand/5.webp" alt="brand images"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Brand Area -->
+        <!-- Start Blog Area -->
+        <section class="htc__blog__area bg__white ptb--100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section__title--2 text-center">
+                            <h3 class="title__line" style="font-size: 30px;">Kiến thức / Kinh nghiệm / Câu chuyện đấu giá</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ht__blog__wrap clearfix">
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="images/blog/blog-img/1.webp" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>March 22, 2016</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Cần chuyên nghiệp trong đấu giá nghệ thuật
+                                    </a></h2>
+                                    <p>Trong bối cảnh còn nhiều khó khăn, nhất là nạn tranh giả từ lâu đã “làm khó” cho cả giới sáng tác và cơ quan quản lý, sự ra đời và hoạt động của các nhà đấu giá nghệ thuật là nỗ lực đáng khích lệ. Thời gian gần đây, một số nhà đấu giá trong nước đã tổ chức nhiều phiên đấu giá công khai, thu hút một lượng khách hàng là các nhà sưu tập, người yêu nghệ thuật trong và ngoài nước tham gia; được dư luận quan tâm, chú ý.
+                                    </p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="images/blog/blog-img/2.webp" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>May 22, 2017</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">Nhận diện thủ đoạn của tội phạm trong hoạt động đấu giá ...
+                                    </a></h2>
+                                    <p>Tình hình vi phạm pháp luật và tội phạm trong lĩnh vực đấu giá, đấu thầu thời gian qua vẫn diễn biến rất phức tạp, tiềm ẩn nhiều nguy cơ, khó khăn, thách thức, tác động tiêu cực đến công tác đảm bảo ANTT.
+
+                                    </p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                        <!-- Start Single Blog -->
+                        <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="blog">
+                                <div class="blog__thumb">
+                                    <a href="blog-details.html">
+                                        <img src="images/blog/blog-img/3.png" alt="blog images">
+                                    </a>
+                                </div>
+                                <div class="blog__details">
+                                    <div class="bl__date">
+                                        <span>March 22, 2018</span>
+                                    </div>
+                                    <h2><a href="blog-details.html">TOP 5 địa chỉ website chuyên "săn" tài sản đấu
+                                        giá trực tuyến trên thế giới
+                                        </a></h2>
+                                    <p>Cùng với sự phát triển mạnh mẽ của mạng Internet và thương mại điện tử toàn cầu, giờ đây bạn không những có thể mua sắm, đấu giá các mặt hàng trong nước mà còn có thể đấu giá “xuyên biên giới”. Trong bài viết dưới đây, G-AUCTION sẽ chia sẻ đến bạn 5 địa chỉ chuyên "săn" tài sản đấu giá trực tuyến trên thế giới, cùng tham khảo nhé!
+                                    </p>
+                                    <div class="blog__btn">
+                                        <a href="blog-details.html">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Area -->
+        <!-- End Banner Area -->
+        <!-- Start Footer Area -->
+        <footer id="htc__footer">
+            <!-- Start Footer Widget -->
+            <div class="footer__container bg__cat--1">
+                <div class="container">
+                    <div class="row">
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer">
+                                <h2 class="title__line--2">Chúng Tôi</h2>
+                                <div class="ft__details">
+                                    <p>G-AUTION là nền tảng đấu giá trực tuyến ứng dụng công nghệ để tối ưu giao dịch các tài sản có giá trị. Từ tranh nghệ thuật, đồ hiệu, đồ cổ đến NFT và BĐS – chúng tôi xây dựng một hệ sinh thái minh bạch, tiện lợi và đầy tiềm năng cho cả người bán lẫn nhà đầu tư.</p>
+                                    <div class="ft__social__link">
+                                        <ul class="social__link">
+                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-social-google icons"></i></a></li>
+
+                                            <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Điều Khoản</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="#">Sử Dụng</a></li>
+                                        <li><a href="#">Bảo Mật</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Chính Sách</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="#">Văn Bản Pháp Quy</a></li>
+                                        <li><a href="">Bảo Mật Thông Tin</a></li>
+                                        <li><a href="#">Tổ Chức Đấu Giá</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">Liên Hệ</h2>
+                                <div class="ft__inner">
+                                    <ul class="ft__list">
+                                        <li><a href="#">Hotline</a></li>
+                                        <li><a href="cart.html">Email</a></li>                                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                        <!-- Start Single Footer Widget -->
+                        <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
+                            <div class="footer">
+                                <h2 class="title__line--2">NEWSLETTER </h2>
+                                <div class="ft__inner">
+                                    <div class="news__input">
+                                        <input type="text" placeholder="Your Mail*">
+                                        <div class="send__btn">
+                                            <a class="fr__btn" href="#">Send Mail</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Footer Widget -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Widget -->
+            <!-- Start Copyright Area -->
+            <div class="htc__copyright bg__cat--5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="copyright__inner">
+                                <p>Copyright© <a href="https://www.facebook.com/share/15YEn2zC9e/">bồ iemm</a> 2025.</p>
+                                <a href="#"><img src="images/others/shape/paypol.png" alt="payment images"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright Area -->
+        </footer>
+        <!-- End Footer Style -->
+    </div>
+    <!-- Body main wrapper end -->
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="js/plugins.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Waypoints.min.js. -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
