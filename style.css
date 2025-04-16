@@ -3695,3 +3695,10 @@ ul.htc__instagram__posts.owl-carousel li img {
     color: rgb(23, 210, 123) !important;
 }
 
+.comment__thumb{
+   img{
+    width: 119px;
+    height: 141px;
+    border-radius: 10px;
+   } 
+}

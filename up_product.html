@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Asbab - eCommerce HTML5 Templatee</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Owl Carousel min css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <style>
+      .auctionForm {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      margin-left: 35%;
+    }
+
+    .auctionForm form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .input-group span {
+      padding: 10px;
+      background: #eee;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .input-group input {
+      border-left: none;
+      border-radius: 0 8px 8px 0;
+      flex: 1;
+    }
+
+    input[type="file"] {
+      font-size: 16px;
+    }
+
+    .preview-image {
+      width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      display: none;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    button[type="submit"] {
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #itemDescription{
+      background-color: white;
+    }
+
+    #auctionForm{
+      margin-top: 20px;
+      input:hover{
+        border-color: red;
+      }      
+    }
+
+    .custom-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.custom-file input[type="file"] {
+  display: none;
+}
+
+.custom-file-label {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.custom-file-label:hover {
+  background-color: #ddd;
+}
+
+    
+    </style>
+</head>
+
+<body>
+  <!-- Body main wrapper start -->
+  <div class="wrapper">
+      <!-- Start Header Style -->
+      <header id="htc__header" class="htc__header__area header--one">
+          <!-- Start Mainmenu Area -->
+          <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
+              <div class="container">
+                  <div class="row">
+                      <div class="menumenu__container clearfix">
+                          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
+                              <div class="logo">
+                                   <a href="index.html"><img src="images/logo/logo.png" alt="logo images"></a>
+                              </div>
+                          </div>
+                          <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
+                              <nav class="main__menu__nav hidden-xs hidden-sm">
+                                  <ul class="main__menu">
+                                      <li class="drop"><a href="index.html">Trang Chủ</a></li>
+                                      <li class="drop"><a href="#">Dịch Vụ</a>
+                                          <ul class="dropdown">
+                                              <li><a href="product-grid.html">Đấu Giá</a></li>
+                                              <li><a href="up_product.html">Đăng Đấu Giá</a></li>
+                                          </ul>
+                                      </li>
+                                      <li class="drop"><a href="product-grid.html">vật phẩm</a>
+                                      </li>
+                                      <li class="drop"><a href="auction.html">phiên đấu giá</a>
+                                          
+                                                  <ul class="dropdown">
+                                                      <li><a href="sapdienra.html">phiên sắp diễn ra</a></li>
+                                                      <li><a href="dangdienra.html">phiên đang diễn ra</a></li>
+                                                      <li><a href="daketthuc.html">phiên đã kết thúc</a></li>
+                                                  </ul>
+                                            
+                                      </li>
+                                      <li class="drop"><a href="blog.html">blog</a>
+                                      </li>
+                                      <li><a href="contact.html">Support Center</a></li>
+                                  </ul>
+                              </nav>
+
+                              <div class="mobile-menu clearfix visible-xs visible-sm">
+                                  <nav id="mobile_dropdown">
+                                      <ul>
+                                          <li><a href="index.html">Home</a></li>
+                                          <li><a href="blog.html">blog</a></li>
+                                          <li><a href="#">pages</a>
+                                              <ul>
+                                                  <li><a href="blog.html">Blog</a></li>
+                                                  <li><a href="blog-details.html">Blog Details</a></li>
+                                                  <li><a href="cart.html">Cart page</a></li>
+                                                  <li><a href="checkout.html">checkout</a></li>
+                                                  <li><a href="contact.html">contact</a></li>
+                                                  <li><a href="product-grid.html">product grid</a></li>
+                                                  <li><a href="product-details.html">product details</a></li>
+                                                  <li><a href="wishlist.html">wishlist</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="contact.html">contact</a></li>
+                                      </ul>
+                                  </nav>
+                              </div>  
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
+                              <div class="header__right">
+                                  <div class="header__search search search__open">
+                                      <a href="#"><i class="icon-magnifier icons"></i></a>
+                                  </div>
+                                  <div class="header__account">
+                                      <a href="#"><i class="icon-user icons"></i></a>
+                                  </div>
+                                  <div class="htc__shopping__cart">
+                                      <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
+                                      <a href="#"><span class="htc__qua">2</span></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mobile-menu-area"></div>
+              </div>
+          </div>
+          <!-- End Mainmenu Area -->
+      </header>
+      <!-- End Header Area -->
+
+      <div class="body__overlay"></div>
+      
+      <div class="auctionForm">
+        <h2>Đăng Tải Vật Phẩm</h2>
+        <form id="auctionForm">
+
+          <div class="custom-file">
+            <label for="itemImage" class="custom-file-label">Chọn ảnh sản phẩm</label>
+            <input type="file" id="itemImage" accept="image/*" />
+            <img id="preview" class="preview-image" alt="Xem trước ảnh">
+          </div>
+
+          <input type="text" id="itemName" placeholder="Tên vật phẩm" required />
+          <textarea id="itemDescription" placeholder="Mô tả vật phẩm" rows="3" required></textarea>
+    
+          <div class="input-group">
+            <span>$</span>
+            <input type="number" id="startingPrice" placeholder="Giá khởi điểm" required />
+          </div>
+    
+          <div class="input-group">
+            <span>$</span>
+            <input type="number" id="priceStep" placeholder="Bước giá" required />
+          </div>
+          
+    
+          <!-- Upload giấy tờ -->
+          <div class="upload-section">      
+            <div class="custom-file">
+              <label for="documentFile" class="custom-file-label">Giấy tờ pháp lí liên quan (PDF, Word, hình ảnh)</label>
+              <input type="file" id="documentFile" accept=".pdf,.doc,.docx,image/*" />
+            </div>
+        
+            <img id="documentPreview" class="preview-image" alt="Xem trước giấy tờ" />
+            <div id="fileName" class="file-name"></div>
+          </div>
+
+    
+          <button type="submit">Đăng vật phẩm</button>
+        </form>
+      </div>
+  
+      <!-- Start Footer Area -->
+      <footer id="htc__footer">
+          <!-- Start Footer Widget -->
+          <div class="footer__container bg__cat--1">
+              <div class="container">
+                  <div class="row">
+                      <!-- Start Single Footer Widget -->
+                      <div class="col-md-3 col-sm-6 col-xs-12">
+                          <div class="footer">
+                              <h2 class="title__line--2">Chúng Tôi</h2>
+                              <div class="ft__details">
+                                  <p>G-AUTION là nền tảng đấu giá trực tuyến ứng dụng công nghệ để tối ưu giao dịch các tài sản có giá trị. Từ tranh nghệ thuật, đồ hiệu, đồ cổ đến NFT và BĐS – chúng tôi xây dựng một hệ sinh thái minh bạch, tiện lợi và đầy tiềm năng cho cả người bán lẫn nhà đầu tư.</p>
+                                  <div class="ft__social__link">
+                                      <ul class="social__link">
+                                          <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+
+                                          <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+
+                                          <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+
+                                          <li><a href="#"><i class="icon-social-google icons"></i></a></li>
+
+                                          <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Single Footer Widget -->
+                      <!-- Start Single Footer Widget -->
+                      <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
+                          <div class="footer">
+                              <h2 class="title__line--2">Điều Khoản</h2>
+                              <div class="ft__inner">
+                                  <ul class="ft__list">
+                                      <li><a href="#">Sử Dụng</a></li>
+                                      <li><a href="#">Bảo Mật</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Single Footer Widget -->
+                      <!-- Start Single Footer Widget -->
+                      <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                          <div class="footer">
+                              <h2 class="title__line--2">Chính Sách</h2>
+                              <div class="ft__inner">
+                                  <ul class="ft__list">
+                                      <li><a href="#">Văn Bản Pháp Quy</a></li>
+                                      <li><a href="">Bảo Mật Thông Tin</a></li>
+                                      <li><a href="#">Tổ Chức Đấu Giá</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Single Footer Widget -->
+                      <!-- Start Single Footer Widget -->
+                      <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
+                          <div class="footer">
+                              <h2 class="title__line--2">Liên Hệ</h2>
+                              <div class="ft__inner">
+                                  <ul class="ft__list">
+                                      <li><a href="#">Hotline</a></li>
+                                      <li><a href="cart.html">Email</a></li>                                      
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Single Footer Widget -->
+                      <!-- Start Single Footer Widget -->
+                      <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
+                          <div class="footer">
+                              <h2 class="title__line--2">NEWSLETTER </h2>
+                              <div class="ft__inner">
+                                  <div class="news__input">
+                                      <input type="text" placeholder="Your Mail*">
+                                      <div class="send__btn">
+                                          <a class="fr__btn" href="#">Send Mail</a>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Single Footer Widget -->
+                  </div>
+              </div>
+          </div>
+          <!-- End Footer Widget -->
+          <!-- Start Copyright Area -->
+          <div class="htc__copyright bg__cat--5">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12">
+                          <div class="copyright__inner">
+                              <p>Copyright© <a href="https://www.facebook.com/share/15YEn2zC9e/">bồ iemm</a> 2025.</p>
+                              <a href="#"><img src="images/others/shape/paypol.png" alt="payment images"></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End Copyright Area -->
+      </footer>
+      <!-- End Footer Style -->
+  </div>
+  
+  <!-- jquery latest version -->
+  <script src="js/vendor/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap framework js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js plugins included in this file. -->
+  <script src="js/plugins.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Waypoints.min.js. -->
+  <script src="js/waypoints.min.js"></script>
+  <!-- Main js file that contents all jQuery plugins activation. -->
+  <script src="js/main.js"></script>
+
+  <script>
+    const itemImageInput = document.getElementById('itemImage');
+    const previewImg = document.getElementById('preview');
+
+    itemImageInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          previewImg.src = e.target.result;
+          previewImg.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        previewImg.src = '';
+        previewImg.style.display = 'none';
+      }
+    });
+
+    // Xử lý khi submit form
+    document.getElementById('auctionForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const itemName = document.getElementById('itemName').value;
+      const itemDescription = document.getElementById('itemDescription').value;
+      const startingPrice = document.getElementById('startingPrice').value;
+      const priceStep = document.getElementById('priceStep').value;
+
+      alert(`Đã đăng vật phẩm:\n- Tên: ${itemName}\n- Mô tả: ${itemDescription}\n- Giá khởi điểm: $${startingPrice}\n- Bước giá: $${priceStep}`);
+    });
+
+    const fileInput = document.getElementById('itemImage');
+  const fileLabel = document.querySelector('.custom-file-label');
+
+  fileInput.addEventListener('change', function () {
+    if (this.files.length > 0) {
+      fileLabel.textContent = this.files[0].name;
+    } else {
+      fileLabel.textContent = "Chọn ảnh sản phẩm";
+    }
+  });
+
+    const documentInput = document.getElementById('documentFile');
+    const documentLabel = document.querySelector('label[for="documentFile"]');
+    const documentPreview = document.getElementById('documentPreview');
+    const fileNameDisplay = document.getElementById('fileName');
+
+    documentInput.addEventListener('change', function () {
+      const file = this.files[0];
+
+      if (file) {
+        documentLabel.textContent = file.name;
+
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            documentPreview.src = e.target.result;
+            documentPreview.style.display = 'block';
+          };
+          reader.readAsDataURL(file);
+        } else {
+          // Không phải ảnh → ẩn ảnh preview
+          documentPreview.src = '';
+          documentPreview.style.display = 'none';
+        }
+      } else {
+        // Nếu không có file nào
+        documentLabel.textContent = "Chọn giấy tờ (PDF, Word, hình ảnh)";
+        documentPreview.src = '';
+        documentPreview.style.display = 'none';
+      }
+    });
+
+  </script>
+</body>
+
+</html>
