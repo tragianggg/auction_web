@@ -3611,6 +3611,10 @@ ul.htc__instagram__posts.owl-carousel li img {
         font-family: 'Arial', sans-serif; /* Chọn font chữ phù hợp */
         background-color: #f9f9f9;
     }
+
+    span, p,a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
     
     h2 {
         color: #333;
@@ -3701,4 +3705,50 @@ ul.htc__instagram__posts.owl-carousel li img {
     height: 141px;
     border-radius: 10px;
    } 
+}
+
+.faq{
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    width: 100%;
+
+    .khung-cau {
+      padding: 20px;
+      background-color: white;
+      border-radius: 0 20px 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: right;
+      width: 60%;
+    }
+
+    .tieu-de-img {
+      flex: left;
+      width: 40%;
+      background-image: url(images/img/faq.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .cau-hoi-block {
+      margin-bottom: 10px;
+    }
+
+    .cau-hoi {
+      font-weight: bold;
+      margin-bottom: 6px;
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .dong-cau {
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-left: 4px solid #007BFF;
+      border-radius: 6px;
+      font-size: 12px;
+    }
 }

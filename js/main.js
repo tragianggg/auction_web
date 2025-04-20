@@ -137,19 +137,6 @@
     07. Shopping Cart Area
 --------------------------------------*/
 
-    $('.cart__menu').on('click', function(e) {
-        e.preventDefault();
-        $('.shopping__cart').addClass('shopping__cart__on');
-        $('.body__overlay').addClass('is-visible');
-
-    });
-
-    $('.offsetmenu__close__btn').on('click', function(e) {
-        e.preventDefault();
-        $('.shopping__cart').removeClass('shopping__cart__on');
-        $('.body__overlay').removeClass('is-visible');
-    });
-
 
 /*------------------------------------    
     08. Filter Area
@@ -173,36 +160,13 @@
     09. Toogle Menu
 --------------------------------------*/
 
-    $('.toggle__menu').on('click', function(e) {
-        e.preventDefault();
-        $('.offsetmenu').addClass('offsetmenu__on');
-        $('.body__overlay').addClass('is-visible');
-
-    });
-
-    $('.offsetmenu__close__btn').on('click', function(e) {
-        e.preventDefault();
-        $('.offsetmenu').removeClass('offsetmenu__on');
-        $('.body__overlay').removeClass('is-visible');
-    });
+    
 
 
 /*------------------------------------    
     10. User Menu
 --------------------------------------*/
 
-    $('.user__menu').on('click', function(e) {
-        e.preventDefault();
-        $('.user__meta').addClass('user__meta__on');
-        $('.body__overlay').addClass('is-visible');
-
-    });
-
-    $('.offsetmenu__close__btn').on('click', function(e) {
-        e.preventDefault();
-        $('.user__meta').removeClass('user__meta__on');
-        $('.body__overlay').removeClass('is-visible');
-    });
 
 
 
