@@ -111,10 +111,6 @@
                                     <div class="header__account">
                                         <a href="#"><i class="icon-user icons"></i></a>
                                     </div>
-                                    <div class="htc__shopping__cart">
-                                        <a class="cart__menu" href="#"><i class="icon-handbag icons"></i></a>
-                                        <a href="#"><span class="htc__qua">2</span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,57 +144,28 @@
                 </div>
             </div>
             <!-- End Search Popap -->
-            <!-- Start Cart Panel -->
-            <div class="shopping__cart">
-                <div class="shopping__cart__inner">
-                    <div class="offsetmenu__close__btn">
-                        <a href="#"><i class="zmdi zmdi-close"></i></a>
-                    </div>
-                    <div class="shp__cart__wrap">
-                        <div class="shp__single__product">
-                            <div class="shp__pro__thumb">
-                                <a href="#">
-                                    <img src="images/product-2/sm-smg/1.jpg" alt="product images">
-                                </a>
-                            </div>
-                            <div class="shp__pro__details">
-                                <h2><a href="product-details.html">BO&Play Wireless Speaker</a></h2>
-                                <span class="quantity">QTY: 1</span>
-                                <span class="shp__price">$105.00</span>
-                            </div>
-                            <div class="remove__btn">
-                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
-                            </div>
-                        </div>
-                        <div class="shp__single__product">
-                            <div class="shp__pro__thumb">
-                                <a href="#">
-                                    <img src="images/product-2/sm-smg/2.jpg" alt="product images">
-                                </a>
-                            </div>
-                            <div class="shp__pro__details">
-                                <h2><a href="product-details.html">Brone Candle</a></h2>
-                                <span class="quantity">QTY: 1</span>
-                                <span class="shp__price">$25.00</span>
-                            </div>
-                            <div class="remove__btn">
-                                <a href="#" title="Remove this item"><i class="zmdi zmdi-close"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="shoping__total">
-                        <li class="subtotal">Subtotal:</li>
-                        <li class="total__price">$130.00</li>
-                    </ul>
-                    <ul class="shopping__btn">
-                        <li><a href="cart.html">View Cart</a></li>
-                        <li class="shp__checkout"><a href="checkout.html">Checkout</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Cart Panel -->
         </div>
         <!-- End Offset Wrapper -->
+        
+        <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên tài sản</th>
+                <th>Giá khởi điểm</th>
+                <th>Bước giá</th>
+                <th>Giá cao nhất hiện tại</th>
+                <th>Thời gian còn lại</th>
+                <th>Trả giá</th>
+              </tr>
+            </thead>
+            <tbody id="assetTableBody">
+              <!-- Các dòng tài sản sẽ được thêm bằng JavaScript -->
+            </tbody>
+          </table>
+
+
+
         <!-- Start Product Grid -->
         <section class="htc__product__grid bg__white ptb--100">
             <div class="container">
@@ -240,9 +207,9 @@
                                                     </a></h4><br>
                                                     <h3 style="border:solid 1px gray; border-radius: 5px; ">Thời gian : 20/04/2025</h3>
                                                     <ul class="fr__pro__prize">
-                                                        <li class="old__prize">Giá khởi điểm : 20.000 USD</li>
+                                                        <li class="old__prize">Giá khởi điểm : $20.000</li>
                                                     </ul>
-                                                    <h4>Bước giá : 500 USD</h4>
+                                                    <h4>Bước giá : $5.000</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -267,9 +234,9 @@
                                                     </a></h4><br>
                                                     <h3 style="border:solid 1px gray; border-radius: 5px; ">Thời gian : 20/04/2025</h3>
                                                     <ul class="fr__pro__prize">
-                                                        <li class="old__prize" >Giá khởi điểm : 50.000 USD</li>
+                                                        <li class="old__prize" >Giá khởi điểm : $50.000</li>
                                                     </ul>
-                                                    <h4>Bước giá : 500 USD</h4>
+                                                    <h4>Bước giá : $500</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -581,6 +548,134 @@
         <!-- End Footer Style -->
     </div>
     <!-- Body main wrapper end -->
+
+    <script>
+        const assets = [
+          {
+            id: 1,
+            name: "Le Trois Femmes",
+            giaKhoiDiem: 700000,
+            buocGia: 5000,
+            thoiGian: 16 * 60 + 54
+          },
+          {
+            id: 2,
+            name: "Chân đèn Khải Định triều Nguyễn",
+            giaKhoiDiem: 50000,
+            buocGia: 500,
+            thoiGian: 10 * 60 + 30
+          }
+        ];
+      
+        function formatNumber(number) {
+          return number.toLocaleString('vi-VN');
+        }
+      
+        function parseNumber(str) {
+          return parseInt(str.replace(/\./g, '').replace(/[^0-9]/g, '')) || 0;
+        }
+      
+        function createAssetRow(asset) {
+          const row = document.createElement("tr");
+          const bidInputId = `bidInput_${asset.id}`;
+          const giaCaoNhatId = `giaCaoNhat_${asset.id}`;
+          const thongBaoId = `thongBao_${asset.id}`;
+          const countdownId = `countdown_${asset.id}`;
+          asset.giaCaoNhat = asset.giaKhoiDiem;
+      
+          row.innerHTML = `
+            <td>${asset.id}</td>
+            <td class="ten-tai-san">${asset.name}</td>
+            <td>$${formatNumber(asset.giaKhoiDiem)}</td>
+            <td>$${formatNumber(asset.buocGia)}</td>
+            <td class="gia-cao-nhat green" id="${giaCaoNhatId}">
+              $${formatNumber(asset.giaCaoNhat)}
+              <span id="trangThai_${asset.id}" style="display: none;">Bạn đang trả giá cao nhất</span>
+            </td>
+            <td class="thoigian" id="${countdownId}">Đang đếm...</td>
+            <td>
+              <div class="tra-gia">
+                <button onclick="changeBid('${bidInputId}', -${asset.buocGia})">-</button>
+                <div class="gia-wrap">
+                  <input type="text" id="${bidInputId}" value="${formatNumber(asset.giaCaoNhat + asset.buocGia)}"
+                    oninput="formatInput(this)">
+                </div>
+                <button onclick="changeBid('${bidInputId}', ${asset.buocGia})">+</button>
+                <button class="btn-tra-gia" onclick="datGia(${asset.id})">🔨</button>
+              </div>
+              <div id="${thongBaoId}" class="thongbao"></div>
+            </td>
+          `;
+      
+          document.getElementById("assetTableBody").appendChild(row);
+      
+          startCountdown(asset.thoiGian, countdownId);
+        }
+      
+        function startCountdown(seconds, elementId) {
+          function tick() {
+            let mins = Math.floor(seconds / 60);
+            let secs = seconds % 60;
+            let hrs = Math.floor(mins / 60);
+            mins = mins % 60;
+            document.getElementById(elementId).innerText =
+              `${hrs} Giờ ${mins} Phút ${secs} Giây`;
+            if (seconds > 0) {
+              seconds--;
+              setTimeout(tick, 1000);
+            }
+          }
+          tick();
+        }
+      
+        function changeBid(inputId, amount) {
+          let input = document.getElementById(inputId);
+          let current = parseNumber(input.value);
+          current = Math.max(0, current + amount);
+          input.value = formatNumber(current);
+        }
+      
+        function formatInput(input) {
+          input.value = formatNumber(parseNumber(input.value));
+        }
+      
+        function datGia(id) {
+        const asset = assets.find(a => a.id === id);
+        const bidInput = document.getElementById(`bidInput_${id}`);
+        const thongBao = document.getElementById(`thongBao_${id}`);
+        const giaCaoNhatEl = document.getElementById(`giaCaoNhat_${id}`);
+        const trangThai = document.getElementById(`trangThai_${id}`);
+      
+        const giaMoi = parseNumber(bidInput.value);
+      
+        if (isNaN(giaMoi) || giaMoi <= asset.giaCaoNhat) {
+          thongBao.className = "thongbao loi";
+          thongBao.innerHTML = "❌ Giá không hợp lệ! Phải cao hơn giá hiện tại.";
+          thongBao.style.display = "block";
+          setTimeout(() => {
+            thongBao.style.animation = "fadeOut 0.5s forwards";
+          }, 2500);
+          return;
+        }
+      
+        // Giá hợp lệ
+        asset.giaCaoNhat = giaMoi;
+        giaCaoNhatEl.innerHTML = `$${formatNumber(asset.giaCaoNhat)}<span id="trangThai_${id}">Bạn đang trả giá cao nhất</span>`;
+      
+        thongBao.className = "thongbao thanhcong";
+        thongBao.innerHTML = "✅ Bạn đang trả giá cao nhất!";
+        thongBao.style.display = "block";
+      
+        setTimeout(() => {
+          thongBao.style.animation = "fadeOut 0.5s forwards";
+        }, 2500);
+      }
+      
+      
+        // Khởi tạo
+        assets.forEach(createAssetRow);
+      </script>
+      
 
     <!-- Placed js at the end of the document so the pages load faster -->
 

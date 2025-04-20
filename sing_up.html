@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Product Details || Asbab - eCommerce HTML5 Template</title>
+    <title>Tragianggg - Auction_web</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -32,16 +32,130 @@
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <style>
+        body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .sign_up {
+      width: 380px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      color: white;
+      overflow: hidden;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      margin: 30px auto;
+
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .tabs span {
+      cursor: pointer;
+      padding: 8px 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .tabs span.active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .form-container {
+      display: flex;
+      width: 200%;
+      transition: transform 0.5s ease;
+    }
+
+    form {
+      width: 50%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 14px 12px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 14px;
+      left: 12px;
+      color: rgba(255, 255, 255, 0.6);
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -10px;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    .form-group input:focus {
+      border-color: #fff;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: #764ba2;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e5e5e5;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media (max-width: 420px) {
+      .sign_up {
+        width: 90%;
+      }
+    }
+    </style>
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->  
-
-    <!-- Body main wrapper start -->
     <div class="wrapper">
-        <!-- Start Header Style -->
         <header id="htc__header" class="htc__header__area header--one">
             <!-- Start Mainmenu Area -->
             <div id="sticky-header-with-topbar" class="mainmenu__wrap sticky__header">
@@ -67,16 +181,16 @@
                                         </li>
                                         <li class="drop"><a href="auction.html">phiên đấu giá</a>
                                             
-                                            <ul class="dropdown">
-                                                <li><a href="sapdienra.html">phiên sắp diễn ra</a></li>
-                                                <li><a href="dangdienra.html">phiên đang diễn ra</a></li>
-                                                <li><a href="daketthuc.html">phiên đã kết thúc</a></li>
-                                            </ul>
+                                                    <ul class="dropdown">
+                                                        <li><a href="sapdienra.html">phiên sắp diễn ra</a></li>
+                                                        <li><a href="dangdienra.html">phiên đang diễn ra</a></li>
+                                                        <li><a href="daketthuc.html">phiên đã kết thúc</a></li>
+                                                    </ul>
                                               
                                         </li>
                                         <li class="drop"><a href="blog.html">blog</a>
                                         </li>
-                                        <li><a href="contact.html">hỗ trợ</a></li>
+                                        <li><a href="contact.html">Hỗ trợ</a></li>
                                     </ul>
                                 </nav>
 
@@ -119,147 +233,49 @@
             </div>
             <!-- End Mainmenu Area -->
         </header>
-        <!-- End Header Area -->
 
-        <div class="body__overlay"></div>
-        <!-- Start Offset Wrapper -->
-        <div class="offset__wrapper">
-            <!-- Start Search Popap -->
-            <div class="search__area">
-                <div class="container" >
-                    <div class="row" >
-                        <div class="col-md-12" >
-                            <div class="search__inner">
-                                <form action="#" method="get">
-                                    <input placeholder="Search here... " type="text">
-                                    <button type="submit"></button>
-                                </form>
-                                <div class="search__close__btn">
-                                    <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="sign_up">
+            <div class="tabs">
+              <span id="loginTab" class="active" onclick="switchTab('login')">Đăng Nhập</span>
+              <span id="registerTab" onclick="switchTab('register')">Đăng Ký</span>
             </div>
-            <!-- End Search Popap -->
-        </div>
-        <!-- End Offset Wrapper -->
-        <!-- Start Bradcaump area -->
-        <!-- End Bradcaump area -->
-        <!-- Start Product Details Area -->
-        <section class="htc__product__details bg__white ptb--100">
-            <!-- Start Product Details Top -->
-            <div class="htc__product__details__top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-                            <div class="htc__product__details__tab__content">
-                                <!-- Start Product Big Images -->
-                                <div class="product__big__images">
-                                    <div class="portfolio-full-image tab-content">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="img-tab-1">
-                                            <img src="images/product-2/big-img/1.png" alt="full-image" style="border-radius: 10px;">
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="img-tab-2">
-                                            <img src="images/product-2/big-img/2.png" alt="full-image">
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="img-tab-3">
-                                            <img src="images/product-2/big-img/3.png" alt="full-image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Product Big Images -->
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 smt-40 xmt-40">
-                            <div class="ht__product__dtl">
-                                <h2 style="font-family:'Courier New', Courier, monospace;">En plein air (Ngoài trời) , Khoảng 1945
-                                    Mực và màu trên lụa, ký tên phía dưới bên trái, tiêu đề ở mặt sau
-                                    73 x 53,8 cm 
-                                    </h2>
-                                <h6>Tác giả: <span>Mai Trung Thứ</span></h6>
-                                <ul class="rating">
-                                    <li><i class="icon-star icons"></i></li>
-                                    <li><i class="icon-star icons"></i></li>
-                                    <li><i class="icon-star icons"></i></li>
-                                    <li><i class="icon-star icons"></i></li>
-                                    <li><i class="icon-star icons"></i></li>
-                                </ul>
-                                <ul  class="pro__prize">
-                                    <li class="old__prize">Giá khởi điểm : $700.000</li>
-                                </ul>
-                                <ul  class="pro__prize">                                  
-                                    <li>Bước giá : $5.000</li>
-                                </ul>
-                                <ul  class="pro__prize">                                  
-                                    <li>Auction time : <span id="countdown" style="color: red;"></span></li>
-                                </ul>
-                                <p class="pro__info">Được vẽ vào đầu những năm 1940, tác phẩm thể hiện vẻ đẹp của người thiếu nữ. Một thiếu nữ đang chăm chú đọc sách, người còn lại đắm chìm trong suy tư. Hai cô gái mặc áo dài truyền thống, giúp tôn lên đường cong mềm mại và vóc dáng thon thả của họ. Với mái tóc được búi cao tinh tế và đôi môi đỏ mọng, những cô gái trông thật duyên dáng và thanh lịch. Gương mặt trái xoan của thiếu nữ là đặc trưng cho phong cách của họa sĩ trong thời kỳ này, nhấn mạnh tiêu chuẩn vẻ đẹp Việt Nam.<br><br>
-                                    Phụ kiện được sử dụng trong bố cục tranh cũng góp phần tô đậm nét Việt. Thật vậy, chiếc gối tựa được một trong hai thiếu nữ sử dụng cùng chiếc hộp nhỏ bằng gỗ là những đồ vật châu Á tiêu biểu. Nếu ảnh hưởng phương Đông ngập tràn trong tác phẩm, kho tàng lịch sử nghệ thuật phương Tây cũng hiện hữu nơi đây.<br><br>
-
-Mặc dù là họa sĩ chuyên vẽ hình minh họa cho các tạp chí thời trang Việt Nam, trang phục của các thiếu nữ được ông thể hiện vẫn mang những nét gấp mềm mại theo phong cách điêu khắc Hy Lạp. Thường đi liền với hình ảnh những chiếc khăn quàng, kỹ thuật này dùng để miêu tả sự chuyển động trong tác phẩm. Chuyển động của cơ thể, đặc biệt là tư thế uốn người theo đường vặn xoắn cũng được thể hiện, mang âm hưởng của trường phái kiểu cách Ý thế kỷ 16.<br><br>
-
-Cuối cùng, việc xây dựng và cân bằng bố cục cũng gợi nhớ đến những bậc thầy hội họa phương Đông đi trước. Trung thành với một trong những chủ đề ưa thích của mình, Mai Trung Thứ đã chứng minh được rằng, ngoài kỹ thuật điêu luyện, ông cũng biết cách kết hợp nhuần nhuyễn nhiều phong cách và xu hướng nghệ thuật khác nhau, đồng thời mang tới một tầm nhìn lý tưởng cho văn hóa Việt Nam.<br><br>
-
-                                </p>
-                                
-                                <div class="ht__pro__desc">
-                                    <div class="sin__desc align--left">
-                                        <p><span>Product tags:</span></p>
-                                        <ul class="pro__cat__list">
-                                            <li><a href="#">Đồ cổ</a></li>
-                                            <li><a href="#">, Tranh</a></li>
-                                            <li><a href="#">, ...</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="sin__desc product__share__link">
-                                        <p><span>Share this:</span></p>
-                                        <ul class="pro__share">
-                                            <li><a href="#" target="_blank"><i class="icon-social-twitter icons"></i></a></li>
-
-                                            <li><a href="#" target="_blank"><i class="icon-social-instagram icons"></i></a></li>
-
-                                            <li><a href="https://www.facebook.com/Furny/?ref=bookmarks" target="_blank"><i class="icon-social-facebook icons"></i></a></li>
-
-                                            <li><a href="#" target="_blank"><i class="icon-social-google icons"></i></a></li>
-
-                                            <li><a href="#" target="_blank"><i class="icon-social-linkedin icons"></i></a></li>
-
-                                            <li><a href="#" target="_blank"><i class="icon-social-pinterest icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        
+            <div class="form-container" id="formContainer">
+              <!-- Đăng Nhập -->
+              <form>
+                <div class="form-group">
+                  <input type="text" id="loginUsername" required placeholder=" ">
+                  <label for="loginUsername">Tên đăng nhập</label>
                 </div>
-            </div>
-            <!-- End Product Details Top -->
-        </section>
-        <!-- End Product Details Area -->
-        <!-- Start Banner Area -->
-        <div class="htc__brand__area bg__cat--4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="ht__brand__inner">
-                            <ul class="brand__list owl-carousel clearfix">
-                                <li><a href="#"><img src="images/brand/1.jpg" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/2.jpg" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/3.jpg" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/4.jpg" alt="brand images"></a></li>
-                                <li><a href="#"><img src="images/brand/5.webp" alt="brand images"></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="form-group">
+                  <input type="password" id="loginPassword" required placeholder=" ">
+                  <label for="loginPassword">Mật khẩu</label>
                 </div>
+                <button type="submit">Đăng Nhập</button>
+              </form>
+        
+              <!-- Đăng Ký -->
+              <form>
+                <div class="form-group">
+                  <input type="text" id="registerUsername" required placeholder=" ">
+                  <label for="registerUsername">Tên đăng nhập</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="registerEmail" required placeholder=" ">
+                  <label for="registerEmail">Email</label>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="registerPassword" required placeholder=" ">
+                  <label for="registerPassword">Mật khẩu</label>
+                </div>              
+                <button type="submit">Đăng Ký</button>
+              </form>
             </div>
-        </div>
-        <!-- End Banner Area -->
-        <!-- End Banner Area -->
-        <!-- Start Footer Area -->
+        
+            <div class="footer">G - Auction 🔥</div>
+          </div>
+        
+
         <footer id="htc__footer">
             <!-- Start Footer Widget -->
             <div class="footer__container bg__cat--1">
@@ -363,12 +379,26 @@ Cuối cùng, việc xây dựng và cân bằng bố cục cũng gợi nhớ đ
             </div>
             <!-- End Copyright Area -->
         </footer>
-        <!-- End Footer Style -->
+
     </div>
-    <!-- Body main wrapper end -->
 
-    <!-- Placed js at the end of the document so the pages load faster -->
-
+    <script>
+        const formContainer = document.getElementById('formContainer');
+        const loginTab = document.getElementById('loginTab');
+        const registerTab = document.getElementById('registerTab');
+    
+        function switchTab(tab) {
+          if (tab === 'login') {
+            formContainer.style.transform = 'translateX(0)';
+            loginTab.classList.add('active');
+            registerTab.classList.remove('active');
+          } else {
+            formContainer.style.transform = 'translateX(-50%)';
+            registerTab.classList.add('active');
+            loginTab.classList.remove('active');
+          }
+        }
+      </script>
     <!-- jquery latest version -->
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap framework js -->
@@ -381,7 +411,6 @@ Cuối cùng, việc xây dựng và cân bằng bố cục cũng gợi nhớ đ
     <script src="js/waypoints.min.js"></script>
     <!-- Main js file that contents all jQuery plugins activation. -->
     <script src="js/main.js"></script>
-
+    
 </body>
-
 </html>

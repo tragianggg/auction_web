@@ -3752,3 +3752,140 @@ ul.htc__instagram__posts.owl-carousel li img {
       font-size: 12px;
     }
 }
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    padding: 0 50px;
+    background-color: hsl(0, 3%, 13%);
+    color: white;
+
+    th, td {
+        padding: 14px;
+        text-align: center;
+      }
+  
+      th {
+        background-color: #1f1f1f;
+      }
+  
+      td {
+        background-color: #1a1a1a;
+      }
+  
+      .ten-tai-san {
+        color: #ff6b6b;
+        font-weight: bold;
+      }
+  
+      .gia-cao-nhat {
+        font-weight: bold;
+        transition: all 0.4s ease;
+      }
+  
+      .gia-cao-nhat.green span {
+        color: #00e676;
+        font-size: 0.9em;
+        display: block;
+      }
+  
+      .thoigian {
+        background-color: #b30000;
+        color: white;
+        padding: 8px;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+  
+      .tra-gia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+  
+      .gia-wrap {
+        position: relative;
+      }
+  
+      .gia-wrap::before {
+        content: '$';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-weight: bold;
+      }
+  
+      .tra-gia input {
+        width: 140px;
+        padding: 6px 10px 6px 22px;
+        text-align: right;
+        border-radius: 8px;
+        border: 1px solid #444;
+        background-color: hsl(0, 0%, 16%);
+        color: #fff;
+      }
+  
+      .tra-gia button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+  
+      .tra-gia button:hover {
+        background-color: #555;
+      }
+  
+      .btn-tra-gia {
+        background-color: #ff3b3b;
+        font-size: 1.2em;
+      }
+  
+      .btn-info {
+        background-color: #2196f3;
+      }
+  
+      .thongbao {
+    margin-top: 10px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    display: none;
+    animation: fadeIn 0.4s ease;
+    text-align: center;
+    font-size: 0.95em;
+    position: relative;
+  }
+  
+  .thongbao.thanhcong {
+    background: linear-gradient(to right, #43e97b, #38f9d7);
+    color: #0d0d0d;
+  }
+  
+  .thongbao.loi {
+    background: linear-gradient(to right, #f85032, #e73827);
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+  }
+}
